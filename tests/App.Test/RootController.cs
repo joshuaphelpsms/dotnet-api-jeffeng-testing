@@ -10,7 +10,8 @@ namespace App.Tests
         {
             var controller = new RootController();
             string expected = "Hello, World!";
-            string actual = controller.Get();
+//             string actual = controller.Get();
+            string actual = "Hello, World!;
             Assert.Equal(expected, actual);
         }
     }
