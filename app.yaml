@@ -1,43 +1,9 @@
-#/app.yaml
-# This file is required for the deployment of the application in the platform. Contact
-# the platform management team to determine the available application templates and
-# their corresponding values.
-
-#template:
-
-# Provides a reference to a template defined in the platform
-# A template declares a set of values for application configuration.
-# For instance, an API exposed publically is a type of we application that 
-# can be referenced externally using an FQDN
-#
-# An example could be:
-# template: external-service
-template: <PlatformTemplateName>
-
-# values:
-# Provides a collection of key value pairs consisting of those
-# values that the specific template declares.
-# In the case of an external service described above, the values could be:
+template: external-service
 values:
-
-  # The FQDN by which the application could be publicly accessed, like
-  # fqdn: sampleapp.acompany.com
-  fqdn: <FQDN>
-
-  # The image specification including tag of the container image to use, like
-  # image: ghcr.io/acompany/sampleapp:latest
-  image: <Image:Label>
-
-  # The name of the app to be used, like
-  # app: dotnet-api-template
-  app: <Name>
-
-  # The port on the container where the app can be accessed, like
-  # port: 5000
-  port: <Port>
-
-  # Other relevant values as defined in the template. In this example, cpu, memory, and 
-  # replicas are all that the application developers must specify
+  fqdn: myapp.io
+  image: ghcr.io//kjeffc/dotnet-api-jeffeng-testing:0.0.1
+  app: dotnet-api-jeffeng-testing
   cpu: 1
   memory: 256M
   replicas: 3
+  port: 5000
