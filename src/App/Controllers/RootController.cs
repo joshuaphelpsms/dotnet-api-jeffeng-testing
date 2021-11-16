@@ -13,7 +13,7 @@ namespace App.Controllers
         public string Get()
         {
             Hits.Inc();
-            return "Hello, World!";
+            return "Hello, World! v2";
         }
     }
 }
